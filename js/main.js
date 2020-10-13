@@ -19,10 +19,17 @@ $(document).ready(function() {
         $('#main-nav').toggleClass("open");
     });
 
-    //Preloader
-    $(window).on('load', function() {
-        $('.preloader').delay(500).slideUp('slow');
-    });
+  /* Preloader */
+	$(window).on('load', function() {
+		var preloaderFadeOutTime = 500;
+		function hidePreloader() {
+			var preloader = $('.spinner-wrapper');
+			setTimeout(function() {
+				preloader.fadeOut(preloaderFadeOutTime);
+			}, 500);
+		}
+		hidePreloader();
+	});
 
     $(function() {
         function showSlide(n) {
