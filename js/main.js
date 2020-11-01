@@ -133,7 +133,7 @@ $(document).ready(function() {
         window.open('https://wisetimer.netlify.app/', '_blank');
     });
     $('#wiseFrame').on('click', function() {
-        window.open('https://sites.google.com/view/wiseframe/home', '_blank');
+        window.open('https://wiseframe.netlify.app/', '_blank');
     });
 
 /*==================================================================
